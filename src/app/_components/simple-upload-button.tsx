@@ -59,7 +59,7 @@ export function SimpleUploadButton() {
 
   return (
     <div>
-      <label htmlFor="upload-button">
+      <label htmlFor="upload-button" className="cursor-pointer">
         <UploadSVG />
       </label>
       <input
