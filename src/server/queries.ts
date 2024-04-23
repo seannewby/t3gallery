@@ -7,7 +7,7 @@ import { images } from "./db/schema";
 import { revalidatePath } from "next/cache";
 
 export async function getMyImages() {
-  const user = auth().protect();
+  const user = auth();
 
   if (!user.userId) throw new Error("Unauthorized");
 
